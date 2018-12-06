@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
+import Select from '@material-ui/core/Select';
 /* eslint-enable */
 import { ValidatorComponent } from 'react-form-validator-core';
 
@@ -20,9 +20,8 @@ export default class SelectValidator extends ValidatorComponent {
         } = this.props;
         const { isValid } = this.state;
         return (
-            <TextField
+            <Select
                 {...rest}
-                select
                 error={!isValid || error}
                 helperText={(!isValid && this.getErrorMessage()) || helperText}
             />

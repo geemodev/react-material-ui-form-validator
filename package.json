@@ -1,5 +1,5 @@
 {
-  "name": "react-material-ui-form-validator",
+  "name": "@geemodev/react-material-ui-form-validator",
   "version": "2.0.3",
   "description": "Simple validator for forms designed with material-ui v1 components.",
   "main": "./lib/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewOldMax/react-material-ui-form-validator.git"
+    "url": "git+https://github.com/geemodev/react-material-ui-form-validator"
   },
   "keywords": [
     "material-ui",
     "form",
     "validation"
   ],
-  "author": "NewOldMax",
+  "author": "Matthew Canham",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NewOldMax/react-material-ui-form-validator/issues"
