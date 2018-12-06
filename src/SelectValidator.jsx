@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import Select from '@material-ui/core/Select';
+import FormHelperText from '@material-ui/core/FormHelperText';
 /* eslint-enable */
 import { ValidatorComponent } from 'react-form-validator-core';
 
@@ -20,11 +21,13 @@ export default class SelectValidator extends ValidatorComponent {
         } = this.props;
         const { isValid } = this.state;
         return (
+          <div>
             <Select
                 {...rest}
                 error={!isValid || error}
-                helperText={(!isValid && this.getErrorMessage()) || helperText}
             />
+            <FormHelperText>{(!isValid && this.getErrorMessage()) || helperText}</FormHelperText>
+          </div>
         );
     }
 }
